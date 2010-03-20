@@ -34,13 +34,16 @@ Router::Simple::Declare - declarative interface for Router::Simple
 
 =head1 SYNOPSIS
 
+    use Router::Simple::Declare;
+
     my $router = router {
         connect '/{controller}/{action}/{id}';
 
-        submapper('/account', {class => 'Account'})
+        submapper('/account', {controller => 'Account'})
             ->connect('/login', {action => 'login'})
             ->connect('/logout', {action => 'logout'});
     };
+    $router->match('/entry/show/3');
 
 =head1 DESCRIPTION
 
