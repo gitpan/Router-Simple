@@ -21,9 +21,10 @@ no_index:
     - t
     - xt
 requires:
+  Class::Accessor::Fast: 0
   List::Util: 0
   parent: 0
   perl: 5.8.0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.04
+version: 0.05

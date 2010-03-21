@@ -159,17 +159,12 @@ This method returns a plain hashref that would look like:
 
 It returns undef if no valid match is found.
 
-- $router->url_for($anchor, \%opts)
+- my ($match, $route) = $router->routematch($env|$path);
 
-Generates a path string from the rule named `$anchor`.
+Match a URL against against one of the routes contained.
 
-You must pass each parameter in `\%opts`.
-
-    my $router = Router::Simple->new();
-    $router->connect('articles', '/article', {controller => 'Article', action => 'index'});
-    $router->connect('edit_articles', '/article/{id}', {controller => 'Article', action => 'edit'});
-    $router->url_for('articles'); # => /articles
-    $router->url_for('edit_articles', {id => 3}); # => /articles/3/edit
+Will return undef if no valid match is found, otherwise a
+result hashref and a [Router::Simple::Route](http://search.cpan.org/search?mode=module&query=Router::Simple::Route) object is returned.
 
 - $router->as_string()
 
