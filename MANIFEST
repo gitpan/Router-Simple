@@ -5,15 +5,10 @@ inc/Module/Install/AuthorTests.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm
 inc/Module/Install/Fetch.pm
-inc/Module/Install/Include.pm
 inc/Module/Install/Makefile.pm
 inc/Module/Install/Metadata.pm
-inc/Module/Install/ReadmeMarkdownFromPod.pm
 inc/Module/Install/Win32.pm
 inc/Module/Install/WriteAll.pm
-inc/Pod/Markdown.pm
-inc/Test/More.pm
-inc/YAML.pm
 lib/Router/Simple.pm
 lib/Router/Simple/Cookbook.pod
 lib/Router/Simple/Declare.pm
