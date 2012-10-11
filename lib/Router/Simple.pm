@@ -2,7 +2,7 @@ package Router::Simple;
 use strict;
 use warnings;
 use 5.00800;
-our $VERSION = '0.09';
+our $VERSION = '0.10';
 use Router::Simple::SubMapper;
 use Router::Simple::Route;
 use List::Util qw/max/;
@@ -32,7 +32,17 @@ sub submapper {
 sub _match {
     my ($self, $env) = @_;
 
-    $env = +{ PATH_INFO => $env } unless ref $env;
+    if (ref $env) {
+        # "I think there was a discussion about that a while ago and it is up to apps to deal with empty PATH_INFO as root / iirc"
+        # -- by @miyagawa
+        #
+        # see http://blog.64p.org/entry/2012/10/05/132354
+        if ($env->{PATH_INFO} eq '') {
+            $env->{PATH_INFO} = '/';
+        }
+    } else {
+        $env = +{ PATH_INFO => $env }
+    }
 
     for my $route (@{$self->{routes}}) {
         my $match = $route->match($env);
@@ -259,7 +269,7 @@ Example output:
 
 =head1 AUTHOR
 
-Tokuhiro Matsuno E<lt>tokuhirom AAJKLFJEF GMAIL COME<gt>
+Tokuhiro Matsuno E<lt>tokuhirom AAJKLFJEF@ GMAIL COME<gt>
 
 =head1 THANKS TO
 
