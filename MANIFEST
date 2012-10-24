@@ -1,4 +1,3 @@
-.gitignore
 Build.PL
 Changes
 lib/Router/Simple.pm
@@ -20,6 +19,7 @@ t/08_splat.t
 t/09_on_match.t
 t/10_routematch.t
 t/11_ext_regexp.t
+t/12_paren_warnings.t
 xt/01_podspell.t
 xt/02_perlcritic.t
 xt/03_pod.t
