@@ -20,6 +20,7 @@ t/09_on_match.t
 t/10_routematch.t
 t/11_ext_regexp.t
 t/12_paren_warnings.t
+t/13_method_not_allowed.t
 xt/01_podspell.t
 xt/02_perlcritic.t
 xt/03_pod.t

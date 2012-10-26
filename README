@@ -75,6 +75,10 @@ METHODS
     my $router = Router::Simple->new();
         Creates a new instance of Router::Simple.
 
+    $router->method_not_allowed() : Boolean
+        This method returns last "$router->match()" call is rejected by HTTP
+        method or not.
+
     $router->connect([$name, ] $pattern, \%destination[, \%options])
         Adds a new rule to $router.
 
