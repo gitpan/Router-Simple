@@ -33,7 +33,7 @@
       },
       "runtime" : {
          "requires" : {
-            "Class::Accessor::Fast" : "0",
+            "Class::Accessor::Lite" : "0.05",
             "List::Util" : "0",
             "Test::More" : "0.88",
             "parent" : "0",
@@ -44,7 +44,7 @@
    "provides" : {
       "Router::Simple" : {
          "file" : "lib/Router/Simple.pm",
-         "version" : "0.13"
+         "version" : "0.14"
       },
       "Router::Simple::Declare" : {
          "file" : "lib/Router/Simple/Declare.pm",
@@ -65,5 +65,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.13"
+   "version" : "0.14"
 }

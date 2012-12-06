@@ -2,11 +2,15 @@ package Router::Simple;
 use strict;
 use warnings;
 use 5.00800;
-our $VERSION = '0.13';
+our $VERSION = '0.14';
 use Router::Simple::SubMapper;
 use Router::Simple::Route;
 use List::Util qw/max/;
 use Carp ();
+
+use Class::Accessor::Lite 0.05 (
+    ro => [qw(routes)],
+);
 
 our $_METHOD_NOT_ALLOWED;
 
