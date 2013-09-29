@@ -1,15 +1,17 @@
 Build.PL
 Changes
+LICENSE
+META.json
+README.md
+author/benchmark.pl
+author/prof.pl
+cpanfile
 lib/Router/Simple.pm
 lib/Router/Simple/Cookbook.pod
 lib/Router/Simple/Declare.pm
 lib/Router/Simple/Route.pm
 lib/Router/Simple/SubMapper.pm
-LICENSE
-MANIFEST			This list of files
-META.json
-META.yml
-README
+minil.toml
 t/00_compile.t
 t/01_simple.t
 t/02_declare.t
@@ -21,10 +23,7 @@ t/10_routematch.t
 t/11_ext_regexp.t
 t/12_paren_warnings.t
 t/13_method_not_allowed.t
-xt/01_podspell.t
 xt/02_perlcritic.t
-xt/03_pod.t
-xt/04_minimum_version.t
 xt/04_synopsis.t
-xt/05_cpan_meta.t
-xt/06_meta_author.t
+META.yml
+MANIFEST
