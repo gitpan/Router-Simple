@@ -3,17 +3,15 @@ abstract: 'simple HTTP router'
 author:
   - 'Tokuhiro Matsuno <tokuhirom AAJKLFJEF@ GMAIL COM>'
 build_requires:
-  Test::More: 0.98
+  Test::More: '0.98'
 configure_requires:
-  CPAN::Meta: 0
-  CPAN::Meta::Prereqs: 0
-  Module::Build: 0.38
+  Module::Build: '0.38'
 dynamic_config: 0
-generated_by: 'Minilla/v0.6.7, CPAN::Meta::Converter version 2.132510'
+generated_by: 'Minilla/v2.2.0, CPAN::Meta::Converter version 2.141520'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: Router-Simple
 no_index:
   directory:
@@ -24,10 +22,11 @@ no_index:
     - eg
     - examples
     - author
+    - builder
 provides:
   Router::Simple:
     file: lib/Router/Simple.pm
-    version: 0.15
+    version: '0.16'
   Router::Simple::Declare:
     file: lib/Router/Simple/Declare.pm
   Router::Simple::Route:
@@ -35,16 +34,16 @@ provides:
   Router::Simple::SubMapper:
     file: lib/Router/Simple/SubMapper.pm
 requires:
-  Class::Accessor::Lite: 0.05
-  List::Util: 0
-  Scalar::Util: 0
-  parent: 0
+  Class::Accessor::Lite: '0.05'
+  List::Util: '0'
+  Scalar::Util: '0'
+  parent: '0'
   perl: 5.008_001
 resources:
   bugtracker: https://github.com/tokuhirom/p5-router-simple/issues
   homepage: https://github.com/tokuhirom/p5-router-simple
   repository: git://github.com/tokuhirom/p5-router-simple.git
-version: 0.15
+version: '0.16'
 x_contributors:
   - 'Shawn M Moore <sartak@gmail.com>'
   - 'Tatsuhiko Miyagawa <miyagawa@bulknews.net>'
@@ -52,4 +51,6 @@ x_contributors:
   - 'Naoki Tomita <tomita@cpan.org>'
   - 'Philippe Bruhat (BooK) <book@cpan.org>'
   - 'David Steinbrunner <dsteinbrunner@pobox.com>'
-  - 'tokuhirom <tokuhirom@gmail.com>'
+  - 'Neil Bowers <neil@bowers.com>'
+  - 'Fayland Lam <fayland@gmail.com>'
+  - 'Tokuhiro Matsuno <tokuhirom@gmail.com>'
