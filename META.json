@@ -4,7 +4,7 @@
       "Tokuhiro Matsuno <tokuhirom AAJKLFJEF@ GMAIL COM>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v2.2.0",
+   "generated_by" : "Minilla/v2.1.1",
    "license" : [
       "perl_5"
    ],
@@ -58,7 +58,7 @@
    "provides" : {
       "Router::Simple" : {
          "file" : "lib/Router/Simple.pm",
-         "version" : "0.16"
+         "version" : "0.17"
       },
       "Router::Simple::Declare" : {
          "file" : "lib/Router/Simple/Declare.pm"
@@ -81,7 +81,7 @@
          "web" : "https://github.com/tokuhirom/p5-router-simple"
       }
    },
-   "version" : "0.16",
+   "version" : "0.17",
    "x_contributors" : [
       "Shawn M Moore <sartak@gmail.com>",
       "Tatsuhiko Miyagawa <miyagawa@bulknews.net>",
@@ -91,6 +91,7 @@
       "David Steinbrunner <dsteinbrunner@pobox.com>",
       "Neil Bowers <neil@bowers.com>",
       "Fayland Lam <fayland@gmail.com>",
+      "Maurice Aubrey <maurice.aubrey@gmail.com>",
       "Tokuhiro Matsuno <tokuhirom@gmail.com>"
    ]
 }
